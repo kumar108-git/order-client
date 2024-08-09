@@ -4,9 +4,9 @@ import org.com.orders.model.OrdersRequestDTO;
 import org.com.orders.model.OrdersResponseDTO;
 
 public interface OrderServiceClient {
-    public OrdersResponseDTO createOrder(OrdersRequestDTO ordersRequestDTO);
-    public void deleteOrder(Integer orderId);
-    public OrdersResponseDTO getOrderById(Integer orderId);
-    public OrdersResponseDTO getAllOrders();
-    public OrdersResponseDTO getOrdersByCustomerId(Integer customerId);
+    OrdersResponseDTO createOrder(OrdersRequestDTO ordersRequestDTO);
+    void deleteOrder(Integer orderId);
+    OrdersResponseDTO getOrderById(Integer orderId);
+    OrdersResponseDTO getAllOrders();
+    OrdersResponseDTO getOrdersByCustomerId(Integer customerId);
 }

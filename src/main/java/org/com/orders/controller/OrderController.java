@@ -4,6 +4,7 @@ package org.com.orders.controller;
 import org.com.orders.model.OrdersRequestDTO;
 import org.com.orders.model.OrdersResponseDTO;
 import org.com.orders.services.OrderServiceClient;
+import org.com.orders.services.OrderServiceClientImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class OrderController {
 
     @Autowired
-    OrderServiceClient orderServiceClient;
+    OrderServiceClientImpl orderServiceClient;
 
     @PostMapping
     public OrdersResponseDTO createOrder(@RequestBody OrdersRequestDTO ordersRequestDTO){
